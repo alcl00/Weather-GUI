@@ -1,4 +1,4 @@
-package org.example;
+package org.alcl00.weather;
 
 
 import io.github.cdimascio.dotenv.Dotenv;
