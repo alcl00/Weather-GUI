@@ -19,7 +19,7 @@ public class WeatherServiceTest {
     @Test
     public void testFetchWeatherWithUKPostCode() {
         String city = "London";
-        String postcode = "SW1A2AB";
+        String postcode = "SW1A 2AB";
         Weather result = weatherService.fetchWeather(postcode);
         assertInstanceOf(Weather.class, result);
         assertEquals(result.getTown(), city);
@@ -37,7 +37,7 @@ public class WeatherServiceTest {
     @Test
     public void testFetchWeatherWithCanadaPostalCode() {
         String city = "Toronto";
-        String postalCode = "M5V3L9";
+        String postalCode = "M5V 3L9";
         Weather result = weatherService.fetchWeather(postalCode);
         assertInstanceOf(Weather.class, result);
         assertEquals(result.getTown(), city);
